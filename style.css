@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position:  relative;
+    min-height: 100vh;    
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1630490588460-75fcfff4cc1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+
+.menu {
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.logo a {
+    font-size: 2rem;
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li {
+    padding: 0 17px;
+}
+
+.menu ul li a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+
+.menu ul li a:hover {
+    color:antiquewhite;
+}
+
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.content .header,.grid-card {
+    width: 50%;
+    position: relative;
+}
+
+.content .header {
+    color: #fff;
+    padding: 90px;
+}
+
+.content .header h3 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+
+.content .header h3 i {
+    color: orange;
+}
+
+
+.content .header h1 {
+    font-size: 5.5rem;
+} 
+
+.content .header p {
+    opacity: .6;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    
+}
+
+.grid-card .box {
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.bg1 {
+    background-image: url(https://cdn.britannica.com/07/192407-050-548620BE/Sunset-view-Chiang-Mai-Thailand.jpg);
+}
+
+.bg2 {  
+    background-image: url(https://media.istockphoto.com/id/1295022330/photo/the-scenery-of-doi-luang-chiang-dao-at-sunset-time-in-chiang-mai-thailand.jpg?s=612x612&w=0&k=20&c=QF66gaaYfGGa75jxFuspcuXJQd5wfEoFgupgHO1H49Q=);
+}
+
+.bg3{
+    background-image: url(https://static1.squarespace.com/static/5937d865d2b8573fe3a2adf5/594b72c7725e251920f152a0/5d147cd61d614700011c5464/1583984844274/Wachirathan+Waterfall.jpg?format=1500w);
+}
+
+
+.bg4{
+    background-image: url(https://files.travelness.com/media/2023/06/a-small-traditional-village-at-mae-kampong-village-chiang-mai-province-thailand-2311214041.487eb5e5.jpg);
+}
+
+.content .box h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+}
+
+.content .box:hover {
+    transform: translateY(-15px);
+
+}
+
+.header button {
+    border: solid 1px #fff;
+    background: none;
+    color: #fff;
+    font-size:1.8rem;
+    padding: 5px 15px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+
+.header button:hover {
+    background: #fff;
+    color: black;
+}
+
+.header button a {
+    color: black;
+    font-weight: bold;
+}
